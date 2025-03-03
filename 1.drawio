@@ -1,9 +1,110 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0" version="26.0.16">
   <diagram name="第 1 页" id="ZZkVuOEahO7oAKtpbx8t">
-    <mxGraphModel>
+    <mxGraphModel dx="876" dy="830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-1" value="" style="ellipse;fillColor=strokeColor;" vertex="1" parent="1">
+          <mxGeometry x="365" y="20" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-2" value="FXS_REST" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="330" y="84" width="84" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-3" value="FXS_IDLE" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;startSize=25;container=0;collapsible=0;rounded=1;arcSize=14;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="197" width="423" height="379" as="geometry" />
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-4" value="" style="ellipse;fillColor=strokeColor;" vertex="1" parent="1">
+          <mxGeometry x="365" y="222" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-5" value="IDLE" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="135" y="342" width="47" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-6" value="FXS_READ" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="55" y="511" width="87" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-7" value="FXS_WRIT" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="192" y="511" width="86" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-8" value="FXS_RDLY" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="56" y="649" width="84" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-9" value="FXS_RSOP" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="204" y="762" width="86" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-10" value="FXS_WSOP" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="231" y="649" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-11" value="空闲状态可响应读写请求&#xa;        读标志位和写标志位互斥生效" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="463" y="286" width="300" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-12" value="空闲状态可响应读写请求&#xa;        读标志位和写标志位互斥生效" style="align=left;spacingLeft=4;" vertex="1" parent="1">
+          <mxGeometry x="498" y="311" width="230" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-13" value="" style="curved=1;startArrow=none;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="IKQ1vTlZm1SLcinFUv_3-1" target="IKQ1vTlZm1SLcinFUv_3-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-14" value="" style="curved=1;startArrow=none;;exitX=0;exitY=0.58;entryX=0.51;entryY=0;rounded=0;" edge="1" parent="1" source="IKQ1vTlZm1SLcinFUv_3-4" target="IKQ1vTlZm1SLcinFUv_3-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="159" y="261" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-15" value="读标志位有效" style="curved=1;startArrow=none;;exitX=0.17;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="IKQ1vTlZm1SLcinFUv_3-5" target="IKQ1vTlZm1SLcinFUv_3-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="98" y="438" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-16" value="写标志位有效" style="curved=1;startArrow=none;;exitX=0.93;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="IKQ1vTlZm1SLcinFUv_3-5" target="IKQ1vTlZm1SLcinFUv_3-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="438" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-17" value="读取中" style="curved=1;startArrow=none;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="IKQ1vTlZm1SLcinFUv_3-6" target="IKQ1vTlZm1SLcinFUv_3-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-18" value="读操作就绪" style="curved=1;startArrow=none;;exitX=0.5;exitY=1;entryX=0.01;entryY=0.09;rounded=0;" edge="1" parent="1" source="IKQ1vTlZm1SLcinFUv_3-8" target="IKQ1vTlZm1SLcinFUv_3-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="98" y="726" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-19" value="写入中" style="curved=1;startArrow=none;;exitX=0.5;exitY=1;entryX=0.34;entryY=0;rounded=0;" edge="1" parent="1" source="IKQ1vTlZm1SLcinFUv_3-7" target="IKQ1vTlZm1SLcinFUv_3-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="613" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-20" value="系统复位完成" style="curved=1;startArrow=none;;rounded=0;" edge="1" parent="1" source="IKQ1vTlZm1SLcinFUv_3-2" target="IKQ1vTlZm1SLcinFUv_3-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-21" value="读完成" style="curved=1;startArrow=none;;rounded=0;" edge="1" parent="1" source="IKQ1vTlZm1SLcinFUv_3-9" target="IKQ1vTlZm1SLcinFUv_3-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-22" value="写完成" style="curved=1;startArrow=none;;rounded=0;" edge="1" parent="1" source="IKQ1vTlZm1SLcinFUv_3-10" target="IKQ1vTlZm1SLcinFUv_3-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKQ1vTlZm1SLcinFUv_3-23" value="" style="curved=1;dashed=1;startArrow=none;;rounded=0;" edge="1" parent="1" source="IKQ1vTlZm1SLcinFUv_3-3" target="IKQ1vTlZm1SLcinFUv_3-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
