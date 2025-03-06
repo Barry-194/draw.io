@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0" version="26.1.0">
   <diagram name="第 1 页" id="ZZkVuOEahO7oAKtpbx8t">
-    <mxGraphModel dx="1649" dy="963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1131" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -315,6 +315,53 @@
         <mxCell id="-RNaRKrEnsvEQi3MmTs9-19" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="-RNaRKrEnsvEQi3MmTs9-9" target="-RNaRKrEnsvEQi3MmTs9-10">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-RNaRKrEnsvEQi3MmTs9-20" value="ADC_Controller" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="77" y="2370" width="150" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="-RNaRKrEnsvEQi3MmTs9-21" value="HCG_ADC" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="277" y="2370" width="150" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="-RNaRKrEnsvEQi3MmTs9-22" value="LCG_ADC" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="477" y="2370" width="150" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="-RNaRKrEnsvEQi3MmTs9-23" value="Fusion_Core" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="677" y="2370" width="150" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="-RNaRKrEnsvEQi3MmTs9-24" value="启动单斜转换" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="-RNaRKrEnsvEQi3MmTs9-20" target="-RNaRKrEnsvEQi3MmTs9-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="261" y="2477" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-RNaRKrEnsvEQi3MmTs9-25" value="返回HCG码值" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="-RNaRKrEnsvEQi3MmTs9-21" target="-RNaRKrEnsvEQi3MmTs9-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="264" y="2529" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-RNaRKrEnsvEQi3MmTs9-26" value="动态调整V_ramp偏移量" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="-RNaRKrEnsvEQi3MmTs9-20" target="-RNaRKrEnsvEQi3MmTs9-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="361" y="2581" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-RNaRKrEnsvEQi3MmTs9-27" value="返回LCG码值" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="-RNaRKrEnsvEQi3MmTs9-22" target="-RNaRKrEnsvEQi3MmTs9-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="364" y="2633" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-RNaRKrEnsvEQi3MmTs9-28" value="同步输出双路数据" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="-RNaRKrEnsvEQi3MmTs9-20" target="-RNaRKrEnsvEQi3MmTs9-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="461" y="2685" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
